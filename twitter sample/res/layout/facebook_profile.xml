@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar" />
+
+    <include layout="@layout/facebook_segmented_tab" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+         >
+
+        <RelativeLayout
+            android:id="@+id/top_control_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_control_bar" >
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scroll_view"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_sub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_layout_main"
+                        android:background="@drawable/profile_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <ImageView
+                                android:id="@+id/user_profile_pic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/user_full_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/user_gender_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sex :" />
+
+                            <TextView
+                                android:id="@+id/user_gender_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/user_location_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lives in " />
+
+                            <TextView
+                                android:id="@+id/user_location_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_birthday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/user_birthday_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Born on " />
+
+                            <TextView
+                                android:id="@+id/user_birthday_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_relation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/user_relationship_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Relationship Status " />
+
+                            <TextView
+                                android:id="@+id/user_relationship_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/user_email_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email : " />
+
+                            <TextView
+                                android:id="@+id/user_email_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_friends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_layout_sub"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/profile_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/friends_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Friends"
+                                android:textStyle="bold" />
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fillViewport="true" >
+
+                                <LinearLayout
+                                    android:id="@+id/linear_layout_friends_list"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp" >
+
+                                    <ImageView
+                                        android:id="@+id/friends_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                  
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/friends_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/friends_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+ 
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/friends_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+   
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/friends_5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+               
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+                                    <TextView
+                                        android:id="@+id/friends_11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+                                    
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_albums"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/profile_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_album_pics"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:layout_marginRight="15dip"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/albums_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Albums"
+                                android:textStyle="bold" />
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fillViewport="true" >
+
+                                <LinearLayout
+                                    android:id="@+id/linear_layout_album_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp" >
+
+                                    <ImageView
+                                        android:id="@+id/albums_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/albums_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/albums_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/albums_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/albums_5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:visibility="gone" />
+                                    
+                                     <TextView
+                                        android:id="@+id/albums_6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

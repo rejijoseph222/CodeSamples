@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.mbpro.tweebook.ui.SegmentedRadioGroup
+            android:id="@+id/segment_facebooktext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+     
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/button_fone"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="30dip"
+                android:minWidth="80dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="News Feed"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors" />
+
+            <RadioButton
+                android:id="@+id/button_ftwo"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="30dip"
+                android:minWidth="80dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Messages"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors" />
+
+            <RadioButton
+                android:id="@+id/button_fthree"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="30dip"
+                android:minWidth="80dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Profile"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors" />
+
+            <RadioButton
+                android:id="@+id/button_ffour"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="30dip"
+                android:minWidth="80dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Post Status"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors" />
+        </com.mbpro.tweebook.ui.SegmentedRadioGroup>
+</merge>

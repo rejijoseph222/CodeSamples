@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+      <item android:id="@+id/menu_send_message"
+        android:icon="@drawable/send_direct_message"
+        android:title="@string/description_back_to_fb"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom" />
+      
+     <item android:id="@+id/menu_back"
+        android:icon="@drawable/backto_fb"
+        android:title="@string/description_back_to_fb"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom" />
+     
+    <item android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_title_refresh"
+        android:title="@string/description_refresh"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom" />
+    
+         <item android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/description_logout"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom" />
+
+</menu>
