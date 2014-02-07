@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/webview_top_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="fill"
+        android:background="@drawable/login_btn"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/backward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/backward" />
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/refresh" />
+
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="52dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/forward" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="10sp" >
+
+            <ImageView
+                android:id="@+id/thumbImageDetail"
+                android:layout_width="wrap_content"
+                android:minWidth="73dp"
+                android:minHeight="73dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingRight="10sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:textColor="#FF9900"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:paddingBottom="12sp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          
+            android:layout_marginLeft="10dp"
+          	android:layout_marginRight="10dp"
+            android:background="#D7CFC9"
+            android:orientation="vertical"
+            android:paddingBottom="5sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="5sp" >
+
+            <TextView
+                android:id="@+id/txtTweetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10sp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginLeft="10dp"
+          	android:layout_marginRight="10dp"
+            android:background="#D7CFC9"
+            android:orientation="vertical"
+            android:paddingBottom="5sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="5sp" >
+
+            <Button
+                android:id="@+id/txtUserLink"
+              android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                 android:background="@drawable/layout_border"
+                android:textColor="#005CBB"
+                android:textSize="14sp"
+                android:textStyle="bold"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_fromtouser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginLeft="10dp"
+          	android:layout_marginRight="10dp"
+             android:background="#D7CFC9"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/txtFromAndToUser"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                 android:background="@drawable/layout_border"
+                android:textColor="#005CBB"
+                android:textSize="14sp"
+                android:textStyle="bold" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+  			 android:background="#D7CFC9"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="5dp" 
+            android:layout_marginLeft="10dp"
+          	android:layout_marginRight="10dp"
+            >
+
+            <Button
+                android:id="@+id/txtExtraLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                 android:background="@drawable/layout_border"
+                android:textColor="#005CBB"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

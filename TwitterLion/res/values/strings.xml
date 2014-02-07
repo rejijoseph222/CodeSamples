@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TwitterLion</string>
+    <string name="app_title">Twitter Lion</string>
+	<string name="str_tweets">Tweets</string>
+    <string name="find">Find!</string>
+    <string name="results">Search results</string>
+    <string name="no_results">No matches found</string>
+    <string name="searching">Searching...</string>
+    <string name="tweet_retrieval_failed">Failed to retrieve tweets</string>
+    <string name="tweet_retrieval_failed_connection">Connection failed</string>
+</resources>

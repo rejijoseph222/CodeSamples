@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6sp" 
+    android:background="#FFFFFF"
+
+    >
+	<ImageView 
+	    android:id="@+id/tweetUserThumbImageView"
+	    android:layout_width="60sp"
+	    android:layout_height="60sp"
+	    android:layout_gravity="center"
+	    android:paddingRight="10sp"
+
+		/>
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+		android:paddingRight="4sp"
+	    >
+			
+		<TextView 
+		    android:id="@+id/tweetTextView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="15sp"
+		     android:textColor="#000000"
+			/>
+		<TextView 
+		    android:id="@+id/tweetUserTextView"
+		    android:singleLine="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   android:textSize="12sp"
+		  	 android:textStyle="bold"
+		    android:textColor="#FF9900"
+
+			/>
+	</LinearLayout>
+</LinearLayout>
